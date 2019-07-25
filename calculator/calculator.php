@@ -1,12 +1,20 @@
 <?php
     $checker = 0;
     do{
-        $operator = readline("Select Operator (ADD,SUB,DIVIDE,MULTIPLY,EXIT): ");
-        $opt = strtoupper($operator);
+        do{
+            $operator = readline("Select Operator (ADD,SUB,DIVIDE,MULTIPLY,EXIT): ");
+            $opt = strtoupper($operator);
+            if($opt == "ADD" || $opt == "SUB")
+                $checker = 1;
+            else    
+                echo "INVALID OPERATOR!!!\n";
+        }while($checker == 0);
+        
         if($opt == "EXIT"){
             echo "BYE!! \n";
             break;
         }
+
         $val1 = readline("Input First Value: ");
         $val2 = readline("Input Second Value: ");
         
