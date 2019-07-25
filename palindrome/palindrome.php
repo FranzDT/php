@@ -1,5 +1,5 @@
 <?php
-    $input = readline("Enter 1st String: ");
+    $input = readline("Enter String: ");
     $revinput = strrev($input);
     $checker = true;
     for($i = strlen($input)/2 ; $i > 0 ; $i--){
