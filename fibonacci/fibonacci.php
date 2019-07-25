@@ -13,4 +13,5 @@
             $prevVal = $total;
         }
     }
+    echo "\n";
 ?>
