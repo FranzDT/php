@@ -10,6 +10,6 @@
                     echo ($row*$column)."\t";
             }
         }
-        echo "\n";
+        echo "\n\n";
     }
 ?>
