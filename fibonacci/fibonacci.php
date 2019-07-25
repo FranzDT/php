@@ -1,17 +1,14 @@
 <?php
     $y =readline("input number:");
-    $total;
-    $lastVal= 1;
-    $prevVal= 1;
-    for($x=0;$x<$y;$x++){
-        if($x<2)
-            echo "1 ";
-        else{
-            $total = $lastVal + $prevVal;
-            echo $total." ";
-            $lastVal = $prevVal;
-            $prevVal = $total;
-        }
+    $total=1;
+    $lastVal= 0;
+    $prevVal= 0;
+    for($x = 1 ; $x <= $y ; $x++){
+        $total += $prevVal + $lastVal;
+        echo $total." ";
+        $lastVal = $prevVal;
+        $prevVal = $total;
+        $total = 0;
     }
     echo "\n";
 ?>
