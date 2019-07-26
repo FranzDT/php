@@ -28,11 +28,11 @@
         if($opt == "ADD")
             echo "$val1 + $val2 = ".($val1+$val2."\n");
         elseif($opt == "SUB")
-            echo "$val1 - $val2 =".($val1-$val2."\n");
+            echo "$val1 - $val2 = ".($val1-$val2."\n");
         elseif($opt == "DIVIDE")
-            echo "$val1 / $val2 =".($val1/$val2."\n");
+            echo "$val1 / $val2 = ".($val1/$val2."\n");
         elseif($opt == "MULTIPLY")
-            echo "$val1 * $val2 =".($val1*$val2."\n");
+            echo "$val1 * $val2 = ".($val1*$val2."\n");
         
     }while($checker = 1);
 ?>
