@@ -1,7 +1,7 @@
 <?php
     require "./multiplication/multiplication.php";
     require "./fibonacci/fibonacci.php";
-    require "palindrome/palindrome.php";
+    require "./palindrome/palindrome.php";
     require "./pyramid/pyramid.php";
 ?>
 
@@ -19,8 +19,11 @@
             pyramid();
         elseif($chose=="PALINDROME")
             palindrome();
-        else  {
-            echo "BYERS! \n"; $checker =0;
+        elseif($chose=="EXIT"){
+            echo "\n BYERS! \n";
+            break;
         }
+        else  
+            echo "\n Invalid Input! \n";
     }while($checker == 1);
 ?>
